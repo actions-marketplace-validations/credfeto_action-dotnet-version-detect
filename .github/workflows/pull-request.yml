@@ -180,7 +180,7 @@ jobs:
 
       - name: "Sync Labels"
         if: steps.findPr.outputs.number == ''
-        uses: actions/labeler@v6
+        uses: actions/labeler@v7
         with:
           repo-token: ${{secrets.SOURCE_PUSH_TOKEN}}
           configuration-path: .github/labeler.yml
